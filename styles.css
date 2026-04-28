@@ -1,3 +1,70 @@
+body {
+  padding: 1.5rem;
+}
+
+.logo {
+  font-family: 'Gowun Batang', serif;
+  color: #9FB7A5;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: #C84A44;
+}
+
+header {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+header h1 {
+  font-family: 'Gowun Batang', serif;
+  font-size: 4rem;
+  color: #9FB7A5;
+}
+
+header h1 span {
+  color: #C84A44;
+}
+
+.sub {
+  font-family: 'Gowun Batang', serif;
+  margin-top: 1rem;
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: #7A6658;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Gowun Batang', serif;
+  color: #9FB7A5;
+}
+
+.blog article {
+  background: #FFFDF8;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.date {
+  color: #C84A44;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  color: #C84A44;
+}
 :root {
   --bg: #F7F5F2;
   --text: #1A1A1A;
