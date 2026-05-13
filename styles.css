@@ -1,78 +1,11 @@
-body {
-  padding: 1.5rem;
-}
-
-.logo {
-  font-family: 'Gowun Batang', serif;
-  color: #9FB7A5;
-  font-size: 1.2rem;
-}
-
-.logo span {
-  color: #C84A44;
-}
-
-header {
-  text-align: center;
-  padding: 6rem 2rem;
-}
-
-header h1 {
-  font-family: 'Gowun Batang', serif;
-  font-size: 4rem;
-  color: #9FB7A5;
-}
-
-header h1 span {
-  color: #C84A44;
-}
-
-.sub {
-  font-family: 'Gowun Batang', serif;
-  margin-top: 1rem;
-}
-
-.tagline {
-  margin-top: 1rem;
-  color: #7A6658;
-}
-
-section {
-  padding: 4rem 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-family: 'Gowun Batang', serif;
-  color: #9FB7A5;
-}
-
-.blog article {
-  background: #FFFDF8;
-  padding: 2rem;
-  border-radius: 20px;
-  margin-top: 2rem;
-}
-
-.date {
-  color: #C84A44;
-  font-size: 0.9rem;
-}
-
-footer {
-  text-align: center;
-  padding: 3rem;
-  color: #C84A44;
-}
 :root {
-  --bg: #F7F5F2;
-  --text: #1A1A1A;
-  --accent: #5D634F;
-  --secondary: #E2E2E2;
-  --subtext: #6B5A4A;
-  --terracotta: #B65E3C;
-  --white: #ffffff;
+  --cream: #F7F3EB;
+  --warm-white: #FFFDF8;
+  --sage: #9FB7A5;
+  --terracotta: #C84A44;
+  --brown: #5C4A3D;
+  --soft-brown: #7A6658;
+  --line: #E4DED4;
 }
 
 * {
@@ -85,257 +18,130 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.5;
+  background: linear-gradient(180deg, #F7F3EB 0%, #FFFDF8 55%, #F1E7DC 100%);
+  color: var(--brown);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+nav {
   padding: 1.5rem 2rem;
-  z-index: 20;
 }
 
 .logo {
-  font-size: 2rem;
-  letter-spacing: 0.04em;
+  font-family: 'Gowun Batang', serif;
+  color: var(--sage);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
 }
 
-.logo-sage {
-  color: #9EB29F;
-}
-
-.logo-colon {
+.logo span,
+header h1 span {
   color: var(--terracotta);
 }
 
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-.hero-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(49, 34, 24, 0.35);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
+header {
   text-align: center;
-  color: #f4eee7;
-  padding: 2rem;
+  padding: 7rem 2rem 6rem;
 }
 
-.hero h1 {
+header h1 {
   margin: 0;
-  font-size: clamp(4rem, 12vw, 9rem);
-  font-weight: 400;
+  font-family: 'Gowun Batang', serif;
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: var(--sage);
+  letter-spacing: 0.04em;
 }
 
-.hero-subtitle {
+.sub {
   margin-top: 1rem;
-  font-size: 1rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gowun Batang', serif;
+  font-size: 1.25rem;
+  color: var(--brown);
 }
 
-.scroll-link {
-  display: inline-block;
+.tagline {
+  margin-top: 1rem;
+  color: var(--soft-brown);
+  font-size: 1.05rem;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: var(--terracotta);
+  margin: 2.5rem auto 0;
+  opacity: 0.65;
+}
+
+section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-family: 'Gowun Batang', serif;
+  font-size: 2.4rem;
+  color: var(--sage);
+}
+
+p {
+  color: var(--soft-brown);
+}
+
+.blog article {
   margin-top: 2rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  background: rgba(255, 253, 248, 0.88);
+  padding: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(92, 74, 61, 0.08);
 }
 
-.section {
-  padding: 7rem 2rem;
-}
-
-.section h2 {
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 400;
-  color: var(--subtext);
-  line-height: 1.05;
-}
-
-.eyebrow {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  color: var(--accent);
-}
-
-.section-grid,
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.text-block p {
-  max-width: 35rem;
-  color: var(--subtext);
-  font-size: 1.1rem;
-}
-
-.image-frame {
-  border: 1px solid #bcae9d;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.offerings-grid,
-.journal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.offering-card,
-.journal-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.offering-card img,
-.journal-card img {
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border: 1px solid #bcae9d;
-  padding: 0.8rem;
-  background: transparent;
-  transition: transform 0.35s ease, opacity 0.35s ease;
-}
-
-.offering-card img:hover,
-.journal-card img:hover {
-  transform: scale(1.02);
-  opacity: 0.95;
-}
-
-.offering-copy,
-.journal-copy {
-  color: var(--subtext);
-}
-
-.offering-category,
-.journal-category {
-  margin-bottom: 0.4rem;
-  color: var(--accent);
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.85rem;
-}
-
-.offering-copy h3,
-.journal-copy h3 {
-  margin: 0 0 0.75rem;
+.blog h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Gowun Batang', serif;
   font-size: 2rem;
-  font-weight: 400;
+  color: var(--brown);
 }
 
-.price,
-.text-link {
-  display: inline-block;
-  margin-top: 0.75rem;
+.date {
+  color: var(--terracotta);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
-.site-footer {
-  background: #5b392d;
-  color: #f4eee7;
-  padding: 5rem 2rem 3rem;
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--terracotta);
 }
 
-.site-footer h2,
-.site-footer p,
-.site-footer a {
-  color: #f4eee7;
+footer p {
+  color: var(--terracotta);
 }
 
-.floating-button {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  width: 64px;
-  height: 64px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  background: #a8bcaa;
-  color: var(--white);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  font-size: 1.4rem;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 900px) {
-  .section-grid,
-  .footer-grid,
-  .offerings-grid,
-  .journal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 5rem 1.25rem;
-  }
-
-  .site-header {
+@media (max-width: 700px) {
+  nav {
     padding: 1.25rem;
   }
 
-  .logo {
-    font-size: 1.6rem;
+  header {
+    padding: 5rem 1.25rem 4rem;
   }
 
-  .floating-button {
-    right: 1rem;
-    bottom: 1rem;
-    width: 56px;
-    height: 56px;
+  section {
+    padding: 3rem 1.25rem;
+  }
+
+  .blog article {
+    padding: 1.5rem;
+    border-radius: 20px;
   }
 }
